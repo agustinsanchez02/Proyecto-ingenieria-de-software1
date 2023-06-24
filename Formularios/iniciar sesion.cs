@@ -24,6 +24,7 @@ namespace Proyecto
         public iniciar_sesion()
         {
             InitializeComponent();
+            int a = 0;
         }
         EventArgs v;
         Color pctOn = Color.FromArgb(65, 168, 95);
@@ -50,7 +51,10 @@ namespace Proyecto
                         SqlDataReader dr = cmd.ExecuteReader();
                         if (dr.Read())
                         {
-                            Inicio inicio = new Inicio();  
+                            int a = 1;
+                            Inicio inicio = new Inicio(a);  
+                            inicio.Iniciarsesion.Hide();
+                            inicio.registrarse.Hide();
                             inicio.Show();
                             this.Hide();
                             conn.Close();
@@ -114,19 +118,12 @@ namespace Proyecto
             switch (caso)
             {
                 case 1:
-                    int i = a.Size.Width;
-                    a.Size = new Size(i, 24);
                     a.BackColor = pctOn;
                     break;
-
                 case 2:
-                    int j = a.Size.Width;
-                    a.Size = new Size(j, 23);
                     a.BackColor = pctOff;
                     break;
                 case 3:
-                    int k = a.Size.Width;
-                    a.Size = new Size(k, 24);
                     a.BackColor = Color.Red;
                     break;
                 default:
@@ -150,7 +147,10 @@ namespace Proyecto
             }
         }
 
-
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
 

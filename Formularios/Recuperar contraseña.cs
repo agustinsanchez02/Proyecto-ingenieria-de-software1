@@ -22,7 +22,6 @@ namespace Proyecto
         {
             InitializeComponent();
             Mail = mail;
-            label4.Text = mail;
         }
         string Mail;
         
@@ -85,6 +84,16 @@ namespace Proyecto
         }
 
         private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
         {
 
         }

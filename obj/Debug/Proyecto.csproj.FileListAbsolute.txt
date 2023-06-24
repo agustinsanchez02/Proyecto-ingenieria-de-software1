@@ -57,3 +57,9 @@ C:\Users\agusp\source\repos\Proyecto\obj\Debug\Proyecto.Form1.resources
 C:\Users\agusp\source\repos\Proyecto\obj\Debug\Proyecto.Form1.aa-ER.resources
 C:\Users\agusp\source\repos\Proyecto\bin\Debug\aa-ER\Proyecto.resources.dll
 C:\Users\agusp\source\repos\Proyecto\obj\Debug\aa-ER\Proyecto.resources.dll
+C:\Users\agusp\source\repos\Proyecto\obj\Debug\Interop.AcroPDFLib.dll
+C:\Users\agusp\source\repos\Proyecto\obj\Debug\AxInterop.AcroPDFLib.dll
+C:\Users\agusp\source\repos\Proyecto\obj\Debug\Proyecto.csproj.ResolveComReference.cache
+C:\Users\agusp\source\repos\Proyecto\bin\Debug\Interop.AcroPDFLib.dll
+C:\Users\agusp\source\repos\Proyecto\bin\Debug\AxInterop.AcroPDFLib.dll
+C:\Users\agusp\source\repos\Proyecto\obj\Debug\Proyecto.Formularios.Subir_Archivo.resources

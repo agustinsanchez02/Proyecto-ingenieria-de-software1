@@ -91,7 +91,7 @@
             this.Contraseña.ForeColor = System.Drawing.Color.White;
             this.Contraseña.Location = new System.Drawing.Point(356, 237);
             this.Contraseña.Name = "Contraseña";
-            this.Contraseña.Size = new System.Drawing.Size(308, 35);
+            this.Contraseña.Size = new System.Drawing.Size(378, 35);
             this.Contraseña.TabIndex = 25;
             // 
             // Usuario
@@ -102,7 +102,7 @@
             this.Usuario.ForeColor = System.Drawing.Color.White;
             this.Usuario.Location = new System.Drawing.Point(357, 171);
             this.Usuario.Name = "Usuario";
-            this.Usuario.Size = new System.Drawing.Size(308, 35);
+            this.Usuario.Size = new System.Drawing.Size(377, 35);
             this.Usuario.TabIndex = 24;
             this.Usuario.TextChanged += new System.EventHandler(this.Usuario_TextChanged);
             // 
@@ -211,7 +211,7 @@
             // 
             this.pctCorreo.Location = new System.Drawing.Point(357, 175);
             this.pctCorreo.Name = "pctCorreo";
-            this.pctCorreo.Size = new System.Drawing.Size(308, 35);
+            this.pctCorreo.Size = new System.Drawing.Size(377, 35);
             this.pctCorreo.TabIndex = 30;
             this.pctCorreo.TabStop = false;
             // 
@@ -219,7 +219,7 @@
             // 
             this.pctContraseña.Location = new System.Drawing.Point(356, 241);
             this.pctContraseña.Name = "pctContraseña";
-            this.pctContraseña.Size = new System.Drawing.Size(308, 35);
+            this.pctContraseña.Size = new System.Drawing.Size(378, 35);
             this.pctContraseña.TabIndex = 31;
             this.pctContraseña.TabStop = false;
             // 
@@ -237,13 +237,14 @@
             this.button1.Text = "X";
             this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // iniciar_sesion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.ClientSize = new System.Drawing.Size(770, 450);
+            this.ClientSize = new System.Drawing.Size(776, 450);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.bunifuFlatButton1);

@@ -48,10 +48,12 @@
             this.bunifuImageButton3 = new Bunifu.Framework.UI.BunifuImageButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.bunifuSeparator1 = new Bunifu.Framework.UI.BunifuSeparator();
-            this.bunifuFlatButton2 = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.registrarse = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.Iniciarsesion = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
             this.button1 = new System.Windows.Forms.Button();
+            this.upload = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.CerrarSesion = new Bunifu.Framework.UI.BunifuFlatButton();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).BeginInit();
@@ -86,7 +88,7 @@
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(62)))), ((int)(((byte)(62)))));
             this.label1.Font = new System.Drawing.Font("Verdana", 10F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(33, 87);
+            this.label1.Location = new System.Drawing.Point(32, 111);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(52, 17);
             this.label1.TabIndex = 5;
@@ -121,7 +123,7 @@
             this.bunifuImageButton9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(62)))), ((int)(((byte)(62)))));
             this.bunifuImageButton9.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton9.Image")));
             this.bunifuImageButton9.ImageActive = null;
-            this.bunifuImageButton9.Location = new System.Drawing.Point(151, 340);
+            this.bunifuImageButton9.Location = new System.Drawing.Point(151, 356);
             this.bunifuImageButton9.Name = "bunifuImageButton9";
             this.bunifuImageButton9.Size = new System.Drawing.Size(34, 14);
             this.bunifuImageButton9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -135,7 +137,7 @@
             this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(62)))), ((int)(((byte)(62)))));
             this.label5.Font = new System.Drawing.Font("Verdana", 10F, System.Drawing.FontStyle.Bold);
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(33, 337);
+            this.label5.Location = new System.Drawing.Point(33, 353);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(73, 17);
             this.label5.TabIndex = 17;
@@ -146,9 +148,9 @@
             this.bunifuImageButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(62)))), ((int)(((byte)(62)))));
             this.bunifuImageButton2.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton2.Image")));
             this.bunifuImageButton2.ImageActive = null;
-            this.bunifuImageButton2.Location = new System.Drawing.Point(0, 84);
+            this.bunifuImageButton2.Location = new System.Drawing.Point(-1, 108);
             this.bunifuImageButton2.Name = "bunifuImageButton2";
-            this.bunifuImageButton2.Size = new System.Drawing.Size(27, 23);
+            this.bunifuImageButton2.Size = new System.Drawing.Size(31, 23);
             this.bunifuImageButton2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.bunifuImageButton2.TabIndex = 4;
             this.bunifuImageButton2.TabStop = false;
@@ -159,7 +161,7 @@
             this.bunifuImageButton10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(62)))), ((int)(((byte)(62)))));
             this.bunifuImageButton10.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton10.Image")));
             this.bunifuImageButton10.ImageActive = null;
-            this.bunifuImageButton10.Location = new System.Drawing.Point(0, 332);
+            this.bunifuImageButton10.Location = new System.Drawing.Point(0, 348);
             this.bunifuImageButton10.Name = "bunifuImageButton10";
             this.bunifuImageButton10.Size = new System.Drawing.Size(27, 28);
             this.bunifuImageButton10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -172,7 +174,7 @@
             this.bunifuImageButton7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(62)))), ((int)(((byte)(62)))));
             this.bunifuImageButton7.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton7.Image")));
             this.bunifuImageButton7.ImageActive = null;
-            this.bunifuImageButton7.Location = new System.Drawing.Point(151, 287);
+            this.bunifuImageButton7.Location = new System.Drawing.Point(151, 303);
             this.bunifuImageButton7.Name = "bunifuImageButton7";
             this.bunifuImageButton7.Size = new System.Drawing.Size(34, 14);
             this.bunifuImageButton7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -186,7 +188,7 @@
             this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(62)))), ((int)(((byte)(62)))));
             this.label4.Font = new System.Drawing.Font("Verdana", 10F, System.Drawing.FontStyle.Bold);
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(33, 284);
+            this.label4.Location = new System.Drawing.Point(33, 300);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(81, 17);
             this.label4.TabIndex = 14;
@@ -197,7 +199,7 @@
             this.bunifuImageButton8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(62)))), ((int)(((byte)(62)))));
             this.bunifuImageButton8.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton8.Image")));
             this.bunifuImageButton8.ImageActive = null;
-            this.bunifuImageButton8.Location = new System.Drawing.Point(0, 279);
+            this.bunifuImageButton8.Location = new System.Drawing.Point(0, 295);
             this.bunifuImageButton8.Name = "bunifuImageButton8";
             this.bunifuImageButton8.Size = new System.Drawing.Size(27, 28);
             this.bunifuImageButton8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -210,7 +212,7 @@
             this.bunifuImageButton5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(62)))), ((int)(((byte)(62)))));
             this.bunifuImageButton5.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton5.Image")));
             this.bunifuImageButton5.ImageActive = null;
-            this.bunifuImageButton5.Location = new System.Drawing.Point(151, 234);
+            this.bunifuImageButton5.Location = new System.Drawing.Point(151, 250);
             this.bunifuImageButton5.Name = "bunifuImageButton5";
             this.bunifuImageButton5.Size = new System.Drawing.Size(34, 14);
             this.bunifuImageButton5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -224,7 +226,7 @@
             this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(62)))), ((int)(((byte)(62)))));
             this.label3.Font = new System.Drawing.Font("Verdana", 10F, System.Drawing.FontStyle.Bold);
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(33, 231);
+            this.label3.Location = new System.Drawing.Point(33, 247);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(116, 17);
             this.label3.TabIndex = 11;
@@ -235,7 +237,7 @@
             this.bunifuImageButton6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(62)))), ((int)(((byte)(62)))));
             this.bunifuImageButton6.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton6.Image")));
             this.bunifuImageButton6.ImageActive = null;
-            this.bunifuImageButton6.Location = new System.Drawing.Point(0, 226);
+            this.bunifuImageButton6.Location = new System.Drawing.Point(0, 242);
             this.bunifuImageButton6.Name = "bunifuImageButton6";
             this.bunifuImageButton6.Size = new System.Drawing.Size(27, 28);
             this.bunifuImageButton6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -248,7 +250,7 @@
             this.bunifuImageButton4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(62)))), ((int)(((byte)(62)))));
             this.bunifuImageButton4.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton4.Image")));
             this.bunifuImageButton4.ImageActive = null;
-            this.bunifuImageButton4.Location = new System.Drawing.Point(151, 175);
+            this.bunifuImageButton4.Location = new System.Drawing.Point(151, 191);
             this.bunifuImageButton4.Name = "bunifuImageButton4";
             this.bunifuImageButton4.Size = new System.Drawing.Size(34, 14);
             this.bunifuImageButton4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -261,7 +263,7 @@
             this.bunifuCustomLabel1.AutoSize = true;
             this.bunifuCustomLabel1.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold);
             this.bunifuCustomLabel1.ForeColor = System.Drawing.Color.White;
-            this.bunifuCustomLabel1.Location = new System.Drawing.Point(58, 137);
+            this.bunifuCustomLabel1.Location = new System.Drawing.Point(58, 156);
             this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
             this.bunifuCustomLabel1.Size = new System.Drawing.Size(91, 14);
             this.bunifuCustomLabel1.TabIndex = 8;
@@ -273,7 +275,7 @@
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(62)))), ((int)(((byte)(62)))));
             this.label2.Font = new System.Drawing.Font("Verdana", 10F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(33, 172);
+            this.label2.Location = new System.Drawing.Point(33, 188);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(73, 17);
             this.label2.TabIndex = 7;
@@ -284,7 +286,7 @@
             this.bunifuImageButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(62)))), ((int)(((byte)(62)))));
             this.bunifuImageButton3.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton3.Image")));
             this.bunifuImageButton3.ImageActive = null;
-            this.bunifuImageButton3.Location = new System.Drawing.Point(0, 167);
+            this.bunifuImageButton3.Location = new System.Drawing.Point(0, 183);
             this.bunifuImageButton3.Name = "bunifuImageButton3";
             this.bunifuImageButton3.Size = new System.Drawing.Size(27, 28);
             this.bunifuImageButton3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -295,9 +297,9 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(-33, -32);
+            this.pictureBox1.Location = new System.Drawing.Point(-21, -15);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(247, 146);
+            this.pictureBox1.Size = new System.Drawing.Size(251, 146);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
@@ -315,81 +317,81 @@
             this.bunifuSeparator1.Transparency = 255;
             this.bunifuSeparator1.Vertical = false;
             // 
-            // bunifuFlatButton2
+            // registrarse
             // 
-            this.bunifuFlatButton2.Activecolor = System.Drawing.Color.White;
-            this.bunifuFlatButton2.BackColor = System.Drawing.Color.White;
-            this.bunifuFlatButton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.bunifuFlatButton2.BorderRadius = 7;
-            this.bunifuFlatButton2.ButtonText = "Registrarse";
-            this.bunifuFlatButton2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuFlatButton2.DisabledColor = System.Drawing.Color.Gray;
-            this.bunifuFlatButton2.Font = new System.Drawing.Font("Verdana", 4.25F);
-            this.bunifuFlatButton2.ForeColor = System.Drawing.Color.Coral;
-            this.bunifuFlatButton2.Iconcolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton2.Iconimage = ((System.Drawing.Image)(resources.GetObject("bunifuFlatButton2.Iconimage")));
-            this.bunifuFlatButton2.Iconimage_right = null;
-            this.bunifuFlatButton2.Iconimage_right_Selected = null;
-            this.bunifuFlatButton2.Iconimage_Selected = null;
-            this.bunifuFlatButton2.IconMarginLeft = 0;
-            this.bunifuFlatButton2.IconMarginRight = 0;
-            this.bunifuFlatButton2.IconRightVisible = true;
-            this.bunifuFlatButton2.IconRightZoom = 0D;
-            this.bunifuFlatButton2.IconVisible = true;
-            this.bunifuFlatButton2.IconZoom = 90D;
-            this.bunifuFlatButton2.IsTab = false;
-            this.bunifuFlatButton2.Location = new System.Drawing.Point(788, 37);
-            this.bunifuFlatButton2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.bunifuFlatButton2.Name = "bunifuFlatButton2";
-            this.bunifuFlatButton2.Normalcolor = System.Drawing.Color.White;
-            this.bunifuFlatButton2.OnHovercolor = System.Drawing.Color.White;
-            this.bunifuFlatButton2.OnHoverTextColor = System.Drawing.Color.White;
-            this.bunifuFlatButton2.selected = false;
-            this.bunifuFlatButton2.Size = new System.Drawing.Size(104, 33);
-            this.bunifuFlatButton2.TabIndex = 9;
-            this.bunifuFlatButton2.Text = "Registrarse";
-            this.bunifuFlatButton2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bunifuFlatButton2.Textcolor = System.Drawing.Color.Black;
-            this.bunifuFlatButton2.TextFont = new System.Drawing.Font("Verdana", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuFlatButton2.Click += new System.EventHandler(this.bunifuFlatButton2_Click);
+            this.registrarse.Activecolor = System.Drawing.Color.White;
+            this.registrarse.BackColor = System.Drawing.Color.White;
+            this.registrarse.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.registrarse.BorderRadius = 7;
+            this.registrarse.ButtonText = "Registrarse";
+            this.registrarse.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.registrarse.DisabledColor = System.Drawing.Color.Gray;
+            this.registrarse.Font = new System.Drawing.Font("Verdana", 4.25F);
+            this.registrarse.ForeColor = System.Drawing.Color.Coral;
+            this.registrarse.Iconcolor = System.Drawing.Color.Transparent;
+            this.registrarse.Iconimage = ((System.Drawing.Image)(resources.GetObject("registrarse.Iconimage")));
+            this.registrarse.Iconimage_right = null;
+            this.registrarse.Iconimage_right_Selected = null;
+            this.registrarse.Iconimage_Selected = null;
+            this.registrarse.IconMarginLeft = 0;
+            this.registrarse.IconMarginRight = 0;
+            this.registrarse.IconRightVisible = true;
+            this.registrarse.IconRightZoom = 0D;
+            this.registrarse.IconVisible = true;
+            this.registrarse.IconZoom = 90D;
+            this.registrarse.IsTab = false;
+            this.registrarse.Location = new System.Drawing.Point(788, 37);
+            this.registrarse.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.registrarse.Name = "registrarse";
+            this.registrarse.Normalcolor = System.Drawing.Color.White;
+            this.registrarse.OnHovercolor = System.Drawing.Color.White;
+            this.registrarse.OnHoverTextColor = System.Drawing.Color.White;
+            this.registrarse.selected = false;
+            this.registrarse.Size = new System.Drawing.Size(104, 33);
+            this.registrarse.TabIndex = 9;
+            this.registrarse.Text = "Registrarse";
+            this.registrarse.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.registrarse.Textcolor = System.Drawing.Color.Black;
+            this.registrarse.TextFont = new System.Drawing.Font("Verdana", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.registrarse.Click += new System.EventHandler(this.bunifuFlatButton2_Click);
             // 
-            // bunifuFlatButton1
+            // Iniciarsesion
             // 
-            this.bunifuFlatButton1.Activecolor = System.Drawing.Color.White;
-            this.bunifuFlatButton1.BackColor = System.Drawing.Color.White;
-            this.bunifuFlatButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.bunifuFlatButton1.BorderRadius = 7;
-            this.bunifuFlatButton1.ButtonText = "Iniciar sesión";
-            this.bunifuFlatButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuFlatButton1.DisabledColor = System.Drawing.Color.Gray;
-            this.bunifuFlatButton1.Font = new System.Drawing.Font("Verdana", 4.25F);
-            this.bunifuFlatButton1.ForeColor = System.Drawing.Color.Coral;
-            this.bunifuFlatButton1.Iconcolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton1.Iconimage = ((System.Drawing.Image)(resources.GetObject("bunifuFlatButton1.Iconimage")));
-            this.bunifuFlatButton1.Iconimage_right = null;
-            this.bunifuFlatButton1.Iconimage_right_Selected = null;
-            this.bunifuFlatButton1.Iconimage_Selected = null;
-            this.bunifuFlatButton1.IconMarginLeft = 0;
-            this.bunifuFlatButton1.IconMarginRight = 0;
-            this.bunifuFlatButton1.IconRightVisible = true;
-            this.bunifuFlatButton1.IconRightZoom = 0D;
-            this.bunifuFlatButton1.IconVisible = true;
-            this.bunifuFlatButton1.IconZoom = 90D;
-            this.bunifuFlatButton1.IsTab = false;
-            this.bunifuFlatButton1.Location = new System.Drawing.Point(909, 37);
-            this.bunifuFlatButton1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.bunifuFlatButton1.Name = "bunifuFlatButton1";
-            this.bunifuFlatButton1.Normalcolor = System.Drawing.Color.White;
-            this.bunifuFlatButton1.OnHovercolor = System.Drawing.Color.White;
-            this.bunifuFlatButton1.OnHoverTextColor = System.Drawing.Color.White;
-            this.bunifuFlatButton1.selected = false;
-            this.bunifuFlatButton1.Size = new System.Drawing.Size(87, 33);
-            this.bunifuFlatButton1.TabIndex = 8;
-            this.bunifuFlatButton1.Text = "Iniciar sesión";
-            this.bunifuFlatButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bunifuFlatButton1.Textcolor = System.Drawing.Color.Black;
-            this.bunifuFlatButton1.TextFont = new System.Drawing.Font("Verdana", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuFlatButton1.Click += new System.EventHandler(this.bunifuFlatButton1_Click);
+            this.Iniciarsesion.Activecolor = System.Drawing.Color.White;
+            this.Iniciarsesion.BackColor = System.Drawing.Color.White;
+            this.Iniciarsesion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.Iniciarsesion.BorderRadius = 7;
+            this.Iniciarsesion.ButtonText = "Iniciar sesión";
+            this.Iniciarsesion.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Iniciarsesion.DisabledColor = System.Drawing.Color.Gray;
+            this.Iniciarsesion.Font = new System.Drawing.Font("Verdana", 4.25F);
+            this.Iniciarsesion.ForeColor = System.Drawing.Color.Coral;
+            this.Iniciarsesion.Iconcolor = System.Drawing.Color.Transparent;
+            this.Iniciarsesion.Iconimage = ((System.Drawing.Image)(resources.GetObject("Iniciarsesion.Iconimage")));
+            this.Iniciarsesion.Iconimage_right = null;
+            this.Iniciarsesion.Iconimage_right_Selected = null;
+            this.Iniciarsesion.Iconimage_Selected = null;
+            this.Iniciarsesion.IconMarginLeft = 0;
+            this.Iniciarsesion.IconMarginRight = 0;
+            this.Iniciarsesion.IconRightVisible = true;
+            this.Iniciarsesion.IconRightZoom = 0D;
+            this.Iniciarsesion.IconVisible = true;
+            this.Iniciarsesion.IconZoom = 90D;
+            this.Iniciarsesion.IsTab = false;
+            this.Iniciarsesion.Location = new System.Drawing.Point(909, 37);
+            this.Iniciarsesion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Iniciarsesion.Name = "Iniciarsesion";
+            this.Iniciarsesion.Normalcolor = System.Drawing.Color.White;
+            this.Iniciarsesion.OnHovercolor = System.Drawing.Color.White;
+            this.Iniciarsesion.OnHoverTextColor = System.Drawing.Color.White;
+            this.Iniciarsesion.selected = false;
+            this.Iniciarsesion.Size = new System.Drawing.Size(87, 33);
+            this.Iniciarsesion.TabIndex = 8;
+            this.Iniciarsesion.Text = "Iniciar sesión";
+            this.Iniciarsesion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Iniciarsesion.Textcolor = System.Drawing.Color.Black;
+            this.Iniciarsesion.TextFont = new System.Drawing.Font("Verdana", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Iniciarsesion.Click += new System.EventHandler(this.bunifuFlatButton1_Click);
             // 
             // bunifuImageButton1
             // 
@@ -418,6 +420,83 @@
             this.button1.Text = "X";
             this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // upload
+            // 
+            this.upload.Activecolor = System.Drawing.Color.White;
+            this.upload.BackColor = System.Drawing.Color.White;
+            this.upload.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.upload.BorderRadius = 7;
+            this.upload.ButtonText = "Subir archivo";
+            this.upload.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.upload.DisabledColor = System.Drawing.Color.Gray;
+            this.upload.Font = new System.Drawing.Font("Verdana", 4.25F);
+            this.upload.ForeColor = System.Drawing.Color.Coral;
+            this.upload.Iconcolor = System.Drawing.Color.Transparent;
+            this.upload.Iconimage = ((System.Drawing.Image)(resources.GetObject("upload.Iconimage")));
+            this.upload.Iconimage_right = null;
+            this.upload.Iconimage_right_Selected = null;
+            this.upload.Iconimage_Selected = null;
+            this.upload.IconMarginLeft = 0;
+            this.upload.IconMarginRight = 0;
+            this.upload.IconRightVisible = true;
+            this.upload.IconRightZoom = 0D;
+            this.upload.IconVisible = true;
+            this.upload.IconZoom = 90D;
+            this.upload.IsTab = false;
+            this.upload.Location = new System.Drawing.Point(788, 37);
+            this.upload.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.upload.Name = "upload";
+            this.upload.Normalcolor = System.Drawing.Color.White;
+            this.upload.OnHovercolor = System.Drawing.Color.White;
+            this.upload.OnHoverTextColor = System.Drawing.Color.White;
+            this.upload.selected = false;
+            this.upload.Size = new System.Drawing.Size(104, 33);
+            this.upload.TabIndex = 41;
+            this.upload.Text = "Subir archivo";
+            this.upload.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.upload.Textcolor = System.Drawing.Color.Black;
+            this.upload.TextFont = new System.Drawing.Font("Verdana", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.upload.Click += new System.EventHandler(this.upload_Click);
+            // 
+            // CerrarSesion
+            // 
+            this.CerrarSesion.Activecolor = System.Drawing.Color.White;
+            this.CerrarSesion.BackColor = System.Drawing.Color.White;
+            this.CerrarSesion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.CerrarSesion.BorderRadius = 7;
+            this.CerrarSesion.ButtonText = "Cerrar sesión";
+            this.CerrarSesion.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.CerrarSesion.DisabledColor = System.Drawing.Color.Gray;
+            this.CerrarSesion.Font = new System.Drawing.Font("Verdana", 4.25F);
+            this.CerrarSesion.ForeColor = System.Drawing.Color.Coral;
+            this.CerrarSesion.Iconcolor = System.Drawing.Color.Transparent;
+            this.CerrarSesion.Iconimage = ((System.Drawing.Image)(resources.GetObject("CerrarSesion.Iconimage")));
+            this.CerrarSesion.Iconimage_right = null;
+            this.CerrarSesion.Iconimage_right_Selected = null;
+            this.CerrarSesion.Iconimage_Selected = null;
+            this.CerrarSesion.IconMarginLeft = 0;
+            this.CerrarSesion.IconMarginRight = 0;
+            this.CerrarSesion.IconRightVisible = true;
+            this.CerrarSesion.IconRightZoom = 0D;
+            this.CerrarSesion.IconVisible = true;
+            this.CerrarSesion.IconZoom = 90D;
+            this.CerrarSesion.IsTab = false;
+            this.CerrarSesion.Location = new System.Drawing.Point(909, 37);
+            this.CerrarSesion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.CerrarSesion.Name = "CerrarSesion";
+            this.CerrarSesion.Normalcolor = System.Drawing.Color.White;
+            this.CerrarSesion.OnHovercolor = System.Drawing.Color.White;
+            this.CerrarSesion.OnHoverTextColor = System.Drawing.Color.White;
+            this.CerrarSesion.selected = false;
+            this.CerrarSesion.Size = new System.Drawing.Size(87, 33);
+            this.CerrarSesion.TabIndex = 42;
+            this.CerrarSesion.Text = "Cerrar sesión";
+            this.CerrarSesion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.CerrarSesion.Textcolor = System.Drawing.Color.Black;
+            this.CerrarSesion.TextFont = new System.Drawing.Font("Verdana", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CerrarSesion.Click += new System.EventHandler(this.CerrarSesion_Click);
             // 
             // Inicio
             // 
@@ -425,9 +504,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.ClientSize = new System.Drawing.Size(1019, 609);
+            this.Controls.Add(this.CerrarSesion);
+            this.Controls.Add(this.upload);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.bunifuFlatButton2);
-            this.Controls.Add(this.bunifuFlatButton1);
+            this.Controls.Add(this.registrarse);
+            this.Controls.Add(this.Iniciarsesion);
             this.Controls.Add(this.bunifuCustomTextbox1);
             this.Controls.Add(this.bunifuImageButton1);
             this.Controls.Add(this.panel1);
@@ -436,6 +517,7 @@
             this.Name = "Inicio";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Inicio";
+            this.Load += new System.EventHandler(this.Inicio_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton9)).EndInit();
@@ -476,8 +558,10 @@
         private System.Windows.Forms.Label label2;
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton3;
         private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator1;
-        private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton1;
-        private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton2;
         private System.Windows.Forms.Button button1;
+        public Bunifu.Framework.UI.BunifuFlatButton Iniciarsesion;
+        public Bunifu.Framework.UI.BunifuFlatButton registrarse;
+        public Bunifu.Framework.UI.BunifuFlatButton upload;
+        public Bunifu.Framework.UI.BunifuFlatButton CerrarSesion;
     }
 }
