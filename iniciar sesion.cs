@@ -77,7 +77,6 @@ namespace Proyecto
             }
             else
             {
-                Form1 form = new Form1();
 
                 Controladora.usuarios1 controladora = new Controladora.usuarios1();
 
@@ -101,7 +100,9 @@ namespace Proyecto
                 formConfirmacion.ShowDialog();
                 if (formConfirmacion.Confirmacion())
                 {
-                    MessageBox.Show("puto");
+                    Form1 form1 = new Form1(mail);
+                    form1.Show();
+                    this.Hide();
                 }
             }
            

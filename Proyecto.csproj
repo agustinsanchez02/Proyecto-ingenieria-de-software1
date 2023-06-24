@@ -122,11 +122,11 @@
     <Compile Include="CodigoConfirmacion.designer.cs">
       <DependentUpon>CodigoConfirmacion.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="Recuperar contraseña.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Recuperar contraseña.Designer.cs">
+      <DependentUpon>Recuperar contraseña.cs</DependentUpon>
     </Compile>
     <Compile Include="iniciar sesion.cs">
       <SubType>Form</SubType>
@@ -186,8 +186,11 @@
     <EmbeddedResource Include="CodigoConfirmacion.resx">
       <DependentUpon>CodigoConfirmacion.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Recuperar contraseña.aa-ER.resx">
+      <DependentUpon>Recuperar contraseña.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Recuperar contraseña.resx">
+      <DependentUpon>Recuperar contraseña.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="iniciar sesion.resx">
       <DependentUpon>iniciar sesion.cs</DependentUpon>

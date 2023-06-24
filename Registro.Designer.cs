@@ -50,6 +50,7 @@
             this.pctUsuario = new System.Windows.Forms.PictureBox();
             this.pctContraseña = new System.Windows.Forms.PictureBox();
             this.pctMail = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctNombre)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctApellido)).BeginInit();
@@ -63,7 +64,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(406, 76);
+            this.label1.Location = new System.Drawing.Point(406, 82);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(208, 23);
             this.label1.TabIndex = 2;
@@ -185,7 +186,7 @@
             // registrobutton
             // 
             this.registrobutton.Activecolor = System.Drawing.Color.Transparent;
-            this.registrobutton.BackColor = System.Drawing.Color.Transparent;
+            this.registrobutton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(41)))), ((int)(((byte)(41)))));
             this.registrobutton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.registrobutton.BorderRadius = 0;
             this.registrobutton.ButtonText = "Registrarse";
@@ -207,7 +208,7 @@
             this.registrobutton.Location = new System.Drawing.Point(410, 387);
             this.registrobutton.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.registrobutton.Name = "registrobutton";
-            this.registrobutton.Normalcolor = System.Drawing.Color.Transparent;
+            this.registrobutton.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(41)))), ((int)(((byte)(41)))));
             this.registrobutton.OnHovercolor = System.Drawing.Color.Transparent;
             this.registrobutton.OnHoverTextColor = System.Drawing.Color.White;
             this.registrobutton.selected = false;
@@ -264,7 +265,7 @@
             this.iniciarsesionbutton.IconVisible = true;
             this.iniciarsesionbutton.IconZoom = 70D;
             this.iniciarsesionbutton.IsTab = false;
-            this.iniciarsesionbutton.Location = new System.Drawing.Point(610, 1);
+            this.iniciarsesionbutton.Location = new System.Drawing.Point(574, 1);
             this.iniciarsesionbutton.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.iniciarsesionbutton.Name = "iniciarsesionbutton";
             this.iniciarsesionbutton.Normalcolor = System.Drawing.Color.Transparent;
@@ -329,12 +330,28 @@
             this.pctMail.TabIndex = 19;
             this.pctMail.TabStop = false;
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(41)))), ((int)(((byte)(41)))));
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.button1.Location = new System.Drawing.Point(733, 1);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(25, 24);
+            this.button1.TabIndex = 40;
+            this.button1.Text = "X";
+            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.button1.UseVisualStyleBackColor = false;
+            // 
             // Registro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.ClientSize = new System.Drawing.Size(759, 450);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.Ojo);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.registrobutton);
@@ -356,7 +373,9 @@
             this.Controls.Add(this.pctUsuario);
             this.Controls.Add(this.pctContraseña);
             this.Controls.Add(this.pctMail);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Registro";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form2";
             this.Load += new System.EventHandler(this.Registro_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -393,5 +412,6 @@
         private System.Windows.Forms.PictureBox pctMail;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button Ojo;
+        private System.Windows.Forms.Button button1;
     }
 }

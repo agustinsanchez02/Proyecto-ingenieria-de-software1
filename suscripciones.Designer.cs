@@ -56,6 +56,7 @@
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.bunifuCards1.SuspendLayout();
             this.bunifuCards2.SuspendLayout();
@@ -473,19 +474,37 @@
             this.label20.Text = "*El precio puede variar dependiendo del metodo de pago. Podrian aplicar caros de " +
     "terceros";
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(41)))), ((int)(((byte)(41)))));
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.button1.Location = new System.Drawing.Point(1010, 1);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(25, 24);
+            this.button1.TabIndex = 40;
+            this.button1.Text = "X";
+            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.button1.UseVisualStyleBackColor = false;
+            // 
             // suscripciones
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.ClientSize = new System.Drawing.Size(1036, 487);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label20);
             this.Controls.Add(this.bunifuCards3);
             this.Controls.Add(this.bunifuCards2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.bunifuCards1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "suscripciones";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "suscripciones";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.bunifuCards1.ResumeLayout(false);
@@ -528,5 +547,6 @@
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton1;
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton3;
         internal Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton2;
+        private System.Windows.Forms.Button button1;
     }
 }

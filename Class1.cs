@@ -43,6 +43,20 @@ namespace Controladora
             return correo;
         }
 
+        public MailMessage Mail_cambiopass(string mail)
+        {
+            MailMessage correo = new MailMessage();
+
+            correo.To.Add(mail);
+            correo.Subject = "Su contraseña se ha modificado correctamente";
+            correo.SubjectEncoding = Encoding.UTF8;
+            correo.Body = "<h2 style='color:#6bf286'>StudySphere\n</h2>" +" Estimado usuario: \n" + "<h1>¡Su cambio de contraseña fue exitoso!</h1>" + "<p><b>Muchas gracias por confiar en nosotros.  </b></p> Si usted no reconoce esta accion por favor comuniquese con soporte.";
+            correo.BodyEncoding = Encoding.UTF8;
+            correo.IsBodyHtml = true;
+            correo.From = new MailAddress("StudySphere@hotmail.com");
+
+            return correo;
+        }
         public SmtpClient SmtpClient()
         {
             SmtpClient smtpClient = new SmtpClient();

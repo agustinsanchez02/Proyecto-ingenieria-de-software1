@@ -22,13 +22,7 @@ namespace Proyecto
         {
             InitializeComponent();
         }
-        string Nombretxt = "Nombre";
-        string Apellidotxt = "Apellido";
-        string Usuariotxt = "Nombre de Usuario";
-        string Correotxt = "Correo Electronico";
-        Color pctOn = Color.FromArgb(65, 168, 95);
-        Color pctOff = Color.DarkGray;
-        EventArgs v;
+  
         int bandera = 0;
 
         private void bunifuFlatButton2_Click(object sender, EventArgs e)

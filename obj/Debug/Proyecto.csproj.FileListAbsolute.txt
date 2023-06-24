@@ -54,3 +54,6 @@ C:\Users\agusp\source\repos\Proyecto\bin\Debug\System.Threading.Tasks.Extensions
 C:\Users\agusp\source\repos\Proyecto\bin\Debug\System.ValueTuple.xml
 C:\Users\agusp\source\repos\Proyecto\obj\Debug\vista.Login.CodigoConfirmacion.resources
 C:\Users\agusp\source\repos\Proyecto\obj\Debug\Proyecto.Form1.resources
+C:\Users\agusp\source\repos\Proyecto\obj\Debug\Proyecto.Form1.aa-ER.resources
+C:\Users\agusp\source\repos\Proyecto\bin\Debug\aa-ER\Proyecto.resources.dll
+C:\Users\agusp\source\repos\Proyecto\obj\Debug\aa-ER\Proyecto.resources.dll

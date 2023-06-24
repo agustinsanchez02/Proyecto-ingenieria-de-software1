@@ -40,6 +40,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pctCorreo = new System.Windows.Forms.PictureBox();
             this.pctContraseña = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctCorreo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctContraseña)).BeginInit();
@@ -180,14 +181,14 @@
             this.bunifuFlatButton2.IconVisible = true;
             this.bunifuFlatButton2.IconZoom = 70D;
             this.bunifuFlatButton2.IsTab = false;
-            this.bunifuFlatButton2.Location = new System.Drawing.Point(629, 2);
+            this.bunifuFlatButton2.Location = new System.Drawing.Point(591, 0);
             this.bunifuFlatButton2.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.bunifuFlatButton2.Name = "bunifuFlatButton2";
             this.bunifuFlatButton2.Normalcolor = System.Drawing.Color.Transparent;
             this.bunifuFlatButton2.OnHovercolor = System.Drawing.Color.Transparent;
             this.bunifuFlatButton2.OnHoverTextColor = System.Drawing.Color.White;
             this.bunifuFlatButton2.selected = false;
-            this.bunifuFlatButton2.Size = new System.Drawing.Size(143, 36);
+            this.bunifuFlatButton2.Size = new System.Drawing.Size(143, 26);
             this.bunifuFlatButton2.TabIndex = 27;
             this.bunifuFlatButton2.Text = "Registrarse";
             this.bunifuFlatButton2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -222,12 +223,28 @@
             this.pctContraseña.TabIndex = 31;
             this.pctContraseña.TabStop = false;
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(41)))), ((int)(((byte)(41)))));
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.button1.Location = new System.Drawing.Point(744, 2);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(25, 24);
+            this.button1.TabIndex = 40;
+            this.button1.Text = "X";
+            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.button1.UseVisualStyleBackColor = false;
+            // 
             // iniciar_sesion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.ClientSize = new System.Drawing.Size(770, 450);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.bunifuFlatButton1);
             this.Controls.Add(this.bunifuFlatButton2);
@@ -239,8 +256,10 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pctCorreo);
             this.Controls.Add(this.pctContraseña);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "iniciar_sesion";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "iniciar_sesion";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctCorreo)).EndInit();
@@ -255,7 +274,6 @@
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton1;
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton2;
         private System.Windows.Forms.TextBox Contraseña;
-        private System.Windows.Forms.TextBox Usuario;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
@@ -263,5 +281,7 @@
         private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.PictureBox pctCorreo;
         private System.Windows.Forms.PictureBox pctContraseña;
+        private System.Windows.Forms.Button button1;
+        public System.Windows.Forms.TextBox Usuario;
     }
 }

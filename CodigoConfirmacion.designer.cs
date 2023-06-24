@@ -236,6 +236,7 @@
             this.Controls.Add(this.pnlLabel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "CodigoConfirmacion";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Confirmación";
             this.Load += new System.EventHandler(this.CodigoConfirmacion_Load);
             this.pnlLabel.ResumeLayout(false);
