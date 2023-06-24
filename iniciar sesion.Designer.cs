@@ -30,21 +30,25 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(iniciar_sesion));
             this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.Contraseña = new System.Windows.Forms.TextBox();
+            this.Usuario = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.bunifuFlatButton2 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pctCorreo = new System.Windows.Forms.PictureBox();
+            this.pctContraseña = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctCorreo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctContraseña)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuFlatButton1
             // 
             this.bunifuFlatButton1.Activecolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton1.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuFlatButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(41)))), ((int)(((byte)(41)))));
             this.bunifuFlatButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.bunifuFlatButton1.BorderRadius = 0;
             this.bunifuFlatButton1.ButtonText = "Iniciar sesión";
@@ -66,7 +70,7 @@
             this.bunifuFlatButton1.Location = new System.Drawing.Point(417, 322);
             this.bunifuFlatButton1.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.bunifuFlatButton1.Name = "bunifuFlatButton1";
-            this.bunifuFlatButton1.Normalcolor = System.Drawing.Color.Transparent;
+            this.bunifuFlatButton1.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(41)))), ((int)(((byte)(41)))));
             this.bunifuFlatButton1.OnHovercolor = System.Drawing.Color.Transparent;
             this.bunifuFlatButton1.OnHoverTextColor = System.Drawing.Color.White;
             this.bunifuFlatButton1.selected = false;
@@ -76,28 +80,30 @@
             this.bunifuFlatButton1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuFlatButton1.Textcolor = System.Drawing.Color.White;
             this.bunifuFlatButton1.TextFont = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuFlatButton1.Click += new System.EventHandler(this.bunifuFlatButton1_Click);
             // 
-            // textBox4
+            // Contraseña
             // 
-            this.textBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(41)))), ((int)(((byte)(41)))));
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox4.Font = new System.Drawing.Font("Verdana", 21F);
-            this.textBox4.ForeColor = System.Drawing.Color.White;
-            this.textBox4.Location = new System.Drawing.Point(357, 237);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(308, 35);
-            this.textBox4.TabIndex = 25;
+            this.Contraseña.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(41)))), ((int)(((byte)(41)))));
+            this.Contraseña.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Contraseña.Font = new System.Drawing.Font("Verdana", 21F);
+            this.Contraseña.ForeColor = System.Drawing.Color.White;
+            this.Contraseña.Location = new System.Drawing.Point(356, 237);
+            this.Contraseña.Name = "Contraseña";
+            this.Contraseña.Size = new System.Drawing.Size(308, 35);
+            this.Contraseña.TabIndex = 25;
             // 
-            // textBox3
+            // Usuario
             // 
-            this.textBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(41)))), ((int)(((byte)(41)))));
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Font = new System.Drawing.Font("Verdana", 21F);
-            this.textBox3.ForeColor = System.Drawing.Color.White;
-            this.textBox3.Location = new System.Drawing.Point(357, 171);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(308, 35);
-            this.textBox3.TabIndex = 24;
+            this.Usuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(41)))), ((int)(((byte)(41)))));
+            this.Usuario.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Usuario.Font = new System.Drawing.Font("Verdana", 21F);
+            this.Usuario.ForeColor = System.Drawing.Color.White;
+            this.Usuario.Location = new System.Drawing.Point(357, 171);
+            this.Usuario.Name = "Usuario";
+            this.Usuario.Size = new System.Drawing.Size(308, 35);
+            this.Usuario.TabIndex = 24;
+            this.Usuario.TextChanged += new System.EventHandler(this.Usuario_TextChanged);
             // 
             // label3
             // 
@@ -150,6 +156,7 @@
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "¿Olvidaste tu contraseña?";
             this.linkLabel1.VisitedLinkColor = System.Drawing.Color.Silver;
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // bunifuFlatButton2
             // 
@@ -199,6 +206,22 @@
             this.pictureBox1.TabIndex = 15;
             this.pictureBox1.TabStop = false;
             // 
+            // pctCorreo
+            // 
+            this.pctCorreo.Location = new System.Drawing.Point(357, 175);
+            this.pctCorreo.Name = "pctCorreo";
+            this.pctCorreo.Size = new System.Drawing.Size(308, 35);
+            this.pctCorreo.TabIndex = 30;
+            this.pctCorreo.TabStop = false;
+            // 
+            // pctContraseña
+            // 
+            this.pctContraseña.Location = new System.Drawing.Point(356, 241);
+            this.pctContraseña.Name = "pctContraseña";
+            this.pctContraseña.Size = new System.Drawing.Size(308, 35);
+            this.pctContraseña.TabIndex = 31;
+            this.pctContraseña.TabStop = false;
+            // 
             // iniciar_sesion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -208,16 +231,20 @@
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.bunifuFlatButton1);
             this.Controls.Add(this.bunifuFlatButton2);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.Contraseña);
+            this.Controls.Add(this.Usuario);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pctCorreo);
+            this.Controls.Add(this.pctContraseña);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "iniciar_sesion";
             this.Text = "iniciar_sesion";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctCorreo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctContraseña)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -227,12 +254,14 @@
 
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton1;
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton2;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox Contraseña;
+        private System.Windows.Forms.TextBox Usuario;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.PictureBox pctCorreo;
+        private System.Windows.Forms.PictureBox pctContraseña;
     }
 }
