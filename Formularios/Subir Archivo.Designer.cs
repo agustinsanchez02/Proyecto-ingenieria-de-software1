@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Subir_Archivo));
             this.button1 = new System.Windows.Forms.Button();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.button3 = new System.Windows.Forms.Button();
@@ -42,11 +43,14 @@
             this.studysphereDataSet = new Proyecto.StudysphereDataSet();
             this.archivosBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.archivosTableAdapter = new Proyecto.StudysphereDataSetTableAdapters.ArchivosTableAdapter();
+            this.axAcroPDF1 = new AxAcroPDFLib.AxAcroPDF();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
+            this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.studysphereDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.archivosBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.axAcroPDF1)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -80,7 +84,12 @@
             this.splitContainer1.Panel1.Controls.Add(this.nombretxt);
             this.splitContainer1.Panel1.Controls.Add(this.label2);
             this.splitContainer1.Panel1.Controls.Add(this.label1);
-            this.splitContainer1.Size = new System.Drawing.Size(798, 477);
+            // 
+            // splitContainer1.Panel2
+            // 
+            this.splitContainer1.Panel2.Controls.Add(this.axAcroPDF1);
+            this.splitContainer1.Panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.splitContainer1_Panel2_Paint);
+            this.splitContainer1.Size = new System.Drawing.Size(798, 693);
             this.splitContainer1.SplitterDistance = 223;
             this.splitContainer1.TabIndex = 43;
             // 
@@ -173,12 +182,21 @@
             // 
             this.archivosTableAdapter.ClearBeforeFill = true;
             // 
+            // axAcroPDF1
+            // 
+            this.axAcroPDF1.Enabled = true;
+            this.axAcroPDF1.Location = new System.Drawing.Point(3, 3);
+            this.axAcroPDF1.Name = "axAcroPDF1";
+            this.axAcroPDF1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axAcroPDF1.OcxState")));
+            this.axAcroPDF1.Size = new System.Drawing.Size(792, 460);
+            this.axAcroPDF1.TabIndex = 42;
+            // 
             // Subir_Archivo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.ClientSize = new System.Drawing.Size(800, 223);
+            this.ClientSize = new System.Drawing.Size(800, 715);
             this.Controls.Add(this.splitContainer1);
             this.Controls.Add(this.button1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -187,10 +205,12 @@
             this.Text = "Subir_Archivo";
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel1.PerformLayout();
+            this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.studysphereDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.archivosBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.axAcroPDF1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -210,5 +230,6 @@
         private StudysphereDataSet studysphereDataSet;
         private System.Windows.Forms.BindingSource archivosBindingSource;
         private StudysphereDataSetTableAdapters.ArchivosTableAdapter archivosTableAdapter;
+        private AxAcroPDFLib.AxAcroPDF axAcroPDF1;
     }
 }

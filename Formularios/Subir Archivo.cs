@@ -24,7 +24,7 @@ namespace Proyecto.Formularios
         {
             InitializeComponent();
         }
-
+        
         private void Explorar_Click(object sender, EventArgs e)
         {
             openFileDialog1.InitialDirectory = "c:\\";
@@ -35,6 +35,7 @@ namespace Proyecto.Formularios
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
                 archivotxt.Text = openFileDialog1.FileName;
+                axAcroPDF1.src = openFileDialog1.FileName;
             }
         }
 
@@ -95,6 +96,9 @@ namespace Proyecto.Formularios
             this.Close();
         }
 
+        private void splitContainer1_Panel2_Paint(object sender, PaintEventArgs e)
+        {
 
+        }
     }
 }

@@ -16,6 +16,8 @@ using System.Configuration;
 using vista.Login;
 using System.Net.Mail;
 using FontAwesome.Sharp;
+using System.Reflection;
+using System.Runtime.InteropServices;
 
 namespace Proyecto
 {
@@ -26,6 +28,11 @@ namespace Proyecto
             InitializeComponent();
             int a = 0;
         }
+        [DllImport("User32.DLL", EntryPoint = "ReleaseCapture")]
+        private extern static void ReleaseCapture();
+        [DllImport("User32.DLL", EntryPoint = "SendMessage")]
+        private extern static void SendMessage(System.IntPtr hwnd, int wmsg, int wparam, int lparam);
+        int bandera = 1;
         EventArgs v;
         Color pctOn = Color.FromArgb(65, 168, 95);
         Color pctOff = Color.DarkGray;
@@ -62,6 +69,7 @@ namespace Proyecto
                         else
                         {
                             MessageBox.Show("Datos incorrectos");
+                            pctLineDecoration(pctContraseña, 3);
                             conn.Close();
                         }
                     }
@@ -150,6 +158,78 @@ namespace Proyecto
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void Ojo_Click(object sender, EventArgs e)
+        {
+            {
+                if (bandera == 0)
+                {
+                    Ojo.BackgroundImage = Properties.Resources.Ojo_cerrado;
+                    Contraseña.UseSystemPasswordChar = true;
+                    bandera = 1;
+                    Ojo.Height = 30;
+                    Ojo.Width = 26;
+                }
+                else
+                {
+                    Ojo.BackgroundImage = Properties.Resources.Ojoabierto;
+                    bandera = 0;
+                    Contraseña.UseSystemPasswordChar = false;
+                    Ojo.Width = 25;
+                    Ojo.Height = 25;
+
+                }
+            }
+        }
+
+        private void Contraseña_Enter(object sender, EventArgs e)
+        {
+            if (Contraseña.Text == "Contraseña")
+            {
+                Contraseña.Text = "";
+                Contraseña.ForeColor = Color.White;
+                Contraseña.UseSystemPasswordChar = true;
+            }
+        }
+
+        private void Usuario_Enter(object sender, EventArgs e)
+        {
+            if (Usuario.Text == "Usuario/Mail")
+            {
+                Usuario.Text = "";
+                Usuario.ForeColor = Color.White;
+            }
+        }
+
+        private void Usuario_Leave(object sender, EventArgs e)
+        {
+            if (Usuario.Text == "")
+            {
+                Usuario.Text = "Usuario/Mail";
+                Usuario.ForeColor = Color.Gray;
+            }
+        }
+
+        private void Contraseña_Leave(object sender, EventArgs e)
+        {
+            if (Contraseña.Text == "")
+            {
+                Contraseña.Text = "Contraseña";
+                Contraseña.ForeColor = Color.Gray;
+                Contraseña.UseSystemPasswordChar = false;
+            }
+        }
+
+        private void iniciar_sesion_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void pictureBox1_MouseDown(object sender, MouseEventArgs e)
+        {
+            iniciar_sesion_MouseDown((object)sender, e);
         }
     }
 }

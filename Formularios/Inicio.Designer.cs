@@ -344,8 +344,8 @@
             this.registrarse.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.registrarse.Name = "registrarse";
             this.registrarse.Normalcolor = System.Drawing.Color.White;
-            this.registrarse.OnHovercolor = System.Drawing.Color.White;
-            this.registrarse.OnHoverTextColor = System.Drawing.Color.White;
+            this.registrarse.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+            this.registrarse.OnHoverTextColor = System.Drawing.Color.Black;
             this.registrarse.selected = false;
             this.registrarse.Size = new System.Drawing.Size(104, 33);
             this.registrarse.TabIndex = 9;
@@ -382,8 +382,8 @@
             this.Iniciarsesion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Iniciarsesion.Name = "Iniciarsesion";
             this.Iniciarsesion.Normalcolor = System.Drawing.Color.White;
-            this.Iniciarsesion.OnHovercolor = System.Drawing.Color.White;
-            this.Iniciarsesion.OnHoverTextColor = System.Drawing.Color.White;
+            this.Iniciarsesion.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+            this.Iniciarsesion.OnHoverTextColor = System.Drawing.Color.Black;
             this.Iniciarsesion.selected = false;
             this.Iniciarsesion.Size = new System.Drawing.Size(87, 33);
             this.Iniciarsesion.TabIndex = 8;
@@ -449,8 +449,8 @@
             this.upload.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.upload.Name = "upload";
             this.upload.Normalcolor = System.Drawing.Color.White;
-            this.upload.OnHovercolor = System.Drawing.Color.White;
-            this.upload.OnHoverTextColor = System.Drawing.Color.White;
+            this.upload.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+            this.upload.OnHoverTextColor = System.Drawing.Color.Black;
             this.upload.selected = false;
             this.upload.Size = new System.Drawing.Size(104, 33);
             this.upload.TabIndex = 41;
@@ -487,8 +487,8 @@
             this.CerrarSesion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.CerrarSesion.Name = "CerrarSesion";
             this.CerrarSesion.Normalcolor = System.Drawing.Color.White;
-            this.CerrarSesion.OnHovercolor = System.Drawing.Color.White;
-            this.CerrarSesion.OnHoverTextColor = System.Drawing.Color.White;
+            this.CerrarSesion.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+            this.CerrarSesion.OnHoverTextColor = System.Drawing.Color.Black;
             this.CerrarSesion.selected = false;
             this.CerrarSesion.Size = new System.Drawing.Size(87, 33);
             this.CerrarSesion.TabIndex = 42;
